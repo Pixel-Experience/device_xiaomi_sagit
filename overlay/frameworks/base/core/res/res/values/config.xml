@@ -117,4 +117,7 @@
     <!-- Does the battery LED support multiple colors?
      Used to decide if the user can change the colors -->
     <bool name="config_multiColorBatteryLed">false</bool>
+
+    <!-- If face auth sends the user directly to home/last open app, or stays on keyguard -->
+    <bool name="config_faceAuthDismissesKeyguard">true</bool>
 </resources>
