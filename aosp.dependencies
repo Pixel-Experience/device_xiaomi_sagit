@@ -5,9 +5,9 @@
     "branch"      : "ten"
   },
   {
-    "repository"  : "xiaomi-msm8998/vendor_xiaomi",
+    "repository"  : "Dobsgw/vendor_xiaomi",
     "target_path" : "vendor/xiaomi"
-    "branch"      : "lineage-17.1"
+    "branch"      : "ten"
   },
   {
     "repository"  : "xiaomi-msm8998/kernel_xiaomi_msm8998",
