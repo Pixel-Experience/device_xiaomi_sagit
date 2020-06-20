@@ -21,17 +21,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sagit device
 $(call inherit-product, device/xiaomi/sagit/device.mk)
 
-# Inherit some common Evolution X stuff.
+# ScreenRecorder
+$(call inherit-product-if-exists, vendor/apps/OPScreenRecord/config.mk)
+
+# Inherit some common Pixel Experience stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 CUSTOM_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BOOT_ANIMATION_RES_EVO := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := false
 
-EVO_DONATE_URL := https://www.paypal.me/Dobsgw
-EVO_MAINTAINER := "Dobsgw"
-EVO_SUPPORT_URL := https://t.me/EvolutionXSagit
 
 PRODUCT_NAME := aosp_sagit
 PRODUCT_DEVICE := sagit
